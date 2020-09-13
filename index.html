@@ -7,6 +7,18 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+	<div id="shopping-list">
+		<h1>{{ header }}</h1>
+		<input type="text" v-model="header">
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script>
+		var shoppingList = new Vue({
+			el: '#shopping-list',
+			data: {
+				header: 'Vue is ready to use!'
+			}
+		});
+	</script>
 </body>
 </html>
